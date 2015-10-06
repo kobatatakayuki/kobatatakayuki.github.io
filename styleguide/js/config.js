@@ -12,6 +12,7 @@ define({
 	// If you'd rather use a different processor or preprocessor, you can choose from the below:
 	css_processor:
 		'jscssp',
+		'scss',
 		// 'less',
 
 	// You can optionally set configuration for marked.js
