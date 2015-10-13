@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja" ng-app>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>音声認識</title>
+<meta charset="utf-8">
+<title>音声認識テスト</title>
+<script>
+function speechInput() {
+alert("changed");
+}
+</script>
 </head>
 <body>
-<h1>音声認識</h1>
-<input type="text" x-webkit-speech />
+<h1>音声認識テスト</h1>
+<input type="text" x-webkit-speech onwebkitspeechchange="speechInput();" />
 </body>
 </html>
