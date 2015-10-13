@@ -3,16 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>AngularJS</title>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script-->
 <script src="./js/sample02.js"></script>
 </head>
 <body>
 	<h1>コントローラー</h1>
 	<div ng-controller="mainCtrl">
 		<p>{{users.length}} users.</p>
+
 		<ul>
 			<li ng-repeat="user in users">{{user.name}}：{{user.score}}</li>
 		</ul>
 	</div>
+
+<p>※ng-controller 、ver1.4.7だと動かなかった。</p>
+
 </body>
 </html>

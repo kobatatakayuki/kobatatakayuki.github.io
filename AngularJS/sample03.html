@@ -9,11 +9,11 @@
 <body>
 	<h1>フィルター</h1>
 	<div ng-controller="mainCtrl">
-		<p>{{25 * 100}}</p>
+		<p>{{25*100}}</p>
 		<p>{{25 * 100 | currency:"¥"}}</p>
 
 		<ul>
-			<li ng-repeat="user in users">{{user.name | uppercase}}：{{user.score | number:4 }}</li>
+			<li ng-repeat="user in users">{{user.name | uppercase}} {{user.score | number:4 }}</li>
 		</ul>
 	</div>
 </body>
