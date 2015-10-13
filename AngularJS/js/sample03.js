@@ -5,6 +5,5 @@ var mainCtrl = function($scope) {
 		{"name":"kobata3","score":"80"},
 	];
 	
-	//日付
 	$scope.today = new Date();
 }
