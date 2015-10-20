@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+<meta charset="UTF-8">
+<title>AngularJS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+<script src="./js/sample04.js"></script>
+<style>
+	.even {
+		background: #ccc;
+	}
+	.odd {
+		background: #ff0000;
+	}
+</style>
+</head>
+<body>
+	<h1>コントローラー</h1>
+	<div ng-controller="mainCtrl">
+
+		<h2>フィルター</h2>
+
+		<input type="text" ng-model="query" />
+
+		<ul>
+			<li ng-repeat="user in users | filter:query" ng-class-even="'even'" ng-class-odd="'odd'">{{$index + 1}} {{user.name}}：{{user.score}}</li>
+		</ul>
+
+		<hr />
+
+		<h2>5件表示</h2>
+		<ul>
+			<li ng-repeat="user in users | limitTo:5" ng-class-even="'even'" ng-class-odd="'odd'">{{$index+ 1}} {{user.name}}：{{user.score}}</li>
+		</ul>
+
+	</div>
+
+		<hr />
+<p>※ng-controller 、ver1.4.7だと動かなかった。</p>
+
+</body>
+</html>
